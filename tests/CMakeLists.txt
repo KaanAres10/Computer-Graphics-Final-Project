@@ -1,0 +1,6 @@
+add_executable(Bachelor_FinalProjectTests 
+  "your_tests.cpp"
+)
+target_compile_features(Bachelor_FinalProjectTests PRIVATE cxx_std_20)
+set_project_warnings(Bachelor_FinalProjectTests)
+target_link_libraries(Bachelor_FinalProjectTests PRIVATE CGFramework Bachelor_Intersect_Import Bachelor_FinalProjectLib Catch2WithMain)
